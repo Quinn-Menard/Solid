@@ -1,27 +1,35 @@
+@font-face{
+	font-family: 'Antipasto';
+	src: url(antipasto/AntipastoPro-Medium_trial.ttf);
+}
+
 body{
 	background-color: #0D0D0D;
 	display: flex;
 	justify-content: center;
 	margin-top: 30px;
+	color: White
+}
+
+html{
+	scroll-behavior: smooth;
 }
 
 	main{
 		background-color: #0D0D0D;
 		padding: 30px 10px 0px 10px;
 		width: 60%;
+		font-family: 'Antipasto', sans-serif;
 	}
 
-	a{
-		color: White;
-
-	}
 
 
 		#nav{
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			border-bottom: 1px solid grey;
+			border-bottom: 1px solid #424242;
+			box-shadow: 0px 15px 19px -10px #424242;
 		}
 
 		
@@ -44,14 +52,23 @@ body{
 					padding-right: 30px;
 				}
 
+					#nav-list li a{
+						text-decoration: none;
+						color: inherit;
+					}
+
 	.nbold{
 		font-weight: normal;
 	}
 	.bold{
-		
+		font-weight: bold;
+	}
+	.name{
+		font-weight: bold;
+		font-size: 16px;
 	}
 
-	#Our-Work{
+	#Landing{
 		display: flex;
 		margin-top: 50px;
 	}
@@ -64,9 +81,9 @@ body{
 		background-color: #063970;
 		padding: 20px 15px 30px 15px;
 		display: flex;
-		align-items: center;
+		box-shadow: 0px 0px 13px 8px #424242;
 		border-radius: 25px;
-		margin-left: 100px;
+		margin-left: 75px;
 	}
 
 		input, textarea{
@@ -79,13 +96,122 @@ body{
 	  		box-sizing: border-box;
 		}
 		textarea{
-			height: 200px;
+			height: 400px;
 		}
 
 		#Contact button{
+			font-size: 20px;
+			position: relative; 
+			left: 50%;
+			transform: translateX(-50%);
 
 		}
 
+	#Review{
+		width: 552px;
+	}
+
+		#User{
+			display: flex;
+		}
+
+		#comment{
+			padding-left: 30px;
+		}
+
+			#comment p{
+				margin-bottom: 0px;
+			}
+
+	#Process{
+		margin-top: 150px;
+		display: flex;
+		border-top: 1px solid #424242;
+	}
+
+		#Process h1{
+			position: relative; 
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 36px;
+		}
+
+		#Process-Container{
+			display: flex;
+			justify-content: center;
+
+		}
+
+			#Process-Container p{
+				font-size: 24px;
+				margin-left: 20px;
+				margin-right: 20px;
+				padding: 20px 15px 30px 15px;
+				box-shadow: 0px 10px 32px 0px #424242;
+			}
+
+	#Our-Work-Title{
+		margin-top: 100px;
+	}
+
+		#Our-Work-Title h1{
+			text-align: center;
+			font-size: 36px;
+		}
+
+		#Our-Work-Title h2{
+			text-align: center;
+		}
+
+	#Our-Work{
+		
+	}
+
+		.row{
+			display: flex;
+			flex-direction: row;
+		  	flex-wrap: wrap;
+		  	justify-content: center;	
+		}
+
+			.row video{
+				margin: 15px 15px 15px 15px;
+			}
+
+	
+
+		#Photography-Title h2{
+			text-align: center;
+			padding-top: 25px;
+			border-top: 1px solid #424242;
+		}
+
+	#About-Us{
+		margin-top: 100px;
+		border-top: 1px solid #424242;
+	}
+
+		#About-Us h1{
+			text-align: center;
+			font-size: 36px;
+		}
+
+	#footer{
+		display: flex;
+	}
+
+		#About-Us-Text p{
+			width: 500px;
+		}
+
+		#About-Us-Content{
+			background-color: #424242;
+			padding: 20px 15px 30px 15px;
+		}
+
+			#About-Us-Content p{
+				width: 500px;
+			}
 
 .button-3 {
   appearance: none;
